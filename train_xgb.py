@@ -1,8 +1,7 @@
 import os
 import pickle
 import numpy as np
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
+from xgboost import XGBClassifier
 from feature_extractor import FeatureExtractor
 
 def collect_samples(samples_dir):
@@ -36,11 +35,18 @@ def main():
     X, y = collect_samples('dataset')
     
     # Train model
-    model = LogisticRegression(random_state=42, max_iter=1000)
+    model = XGBClassifier(
+        n_estimators=200,
+        max_depth=6,
+        learning_rate=0.1,
+        random_state=42,
+        eval_metric="logloss"
+    )
+
     model.fit(X, y)
     
     # Save model and extractor
-    with open('model.pkl', 'wb') as f:
+    with open('model_xgb.pkl', 'wb') as f:
         pickle.dump({
             'model': model,
             'feature_names': FeatureExtractor().feature_names

@@ -45,7 +45,6 @@ class FeatureExtractor:
         
         # Check ELF magic before processing
         if not self.is_valid_elf(filepath):
-            print(f"  Not a valid ELF: {os.path.basename(filepath)}")
             return features
         
         try:
