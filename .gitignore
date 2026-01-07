@@ -3,3 +3,11 @@ venv/
 __pycache__/
 *.pyc
 .DS_Store
+
+dataset/C/
+dataset/C_source/
+dataset/C++/
+dataset/C++_source/
+dataset/metadata.json
+
+*.pkl
