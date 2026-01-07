@@ -1,37 +1,5 @@
-.DS_Store
-
-# Python
+.venv/
+venv/
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-
-# Virtual environment
-venv/
-env/
-*.env
-
-# Model files
-*.pkl
-models/*.pkl
-
-# OS files
 .DS_Store
-Thumbs.db
-
-# Temporary files
-*.tmp
-*.log
-
-# git files
-.gitignore
-
-# folder
-c_programs/
-cpp_programs/
-samples/
-dataset/C/
-dataset/C_source/
-dataset/C++/
-dataset/C++_source/
-dataset/metadata.json
