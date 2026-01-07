@@ -1,6 +1,7 @@
 # create_dataset.py
 from dataset.dataset_generator import DatasetGenerator
 from dataset.sample_code import SampleCodeGenerator
+from tqdm import tqdm
 import os
 import json
 import sys
@@ -35,14 +36,25 @@ code_gen = SampleCodeGenerator()
 
 metadata = []
 
-# C
-for i, code in enumerate(code_gen.generate_c_codes(count)):
+# ----------------------------
+# C samples
+# ----------------------------
+for i, code in tqdm(
+    enumerate(code_gen.generate_c_codes(count)),
+    total=count,
+    desc="Generating C samples"
+):
     metadata.extend(dataset_gen.generate_c_sample(code, i))
 
-# C++
-for i, code in enumerate(code_gen.generate_cpp_codes(count)):
+# ----------------------------
+# C++ samples
+# ----------------------------
+for i, code in tqdm(
+    enumerate(code_gen.generate_cpp_codes(count)),
+    total=count,
+    desc="Generating C++ samples"
+):
     metadata.extend(dataset_gen.generate_cpp_sample(code, i))
-
 
 # ----------------------------
 # Save metadata

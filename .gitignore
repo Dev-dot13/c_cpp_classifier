@@ -1,1 +1,7 @@
 .DS_Store
+dataset/metadata.json
+dataset/C++_source
+dataset/C++
+dataset/C
+dataset/C_source
+dataset/__pycache__
