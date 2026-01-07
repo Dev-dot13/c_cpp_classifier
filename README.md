@@ -34,7 +34,7 @@ Example:
 ```bash
 python predict_xgb.py dataset/C/c_gcc_-O2_stripped.bin
 ```
-Outputs probabilities for C and C++.
+Outputs prediction for C and C++.
 
 ## Notes
 1. Input to analyze must be a compiled binary, not source code.
