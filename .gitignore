@@ -1,6 +1,7 @@
-.venv
-/.venv
-./venv
+.venv/
+venv/
+__pycache__/
+*.pyc
 .DS_Store
 dataset/metadata.json
 dataset/C++_source
