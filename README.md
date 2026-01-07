@@ -22,17 +22,17 @@ python create_dataset.py
 ## Train Model
 Train the classifier and save the trained model:
 ```bash
-python train.py
+python train_xgb.py
 ```
 
 ## Analyze Binary
 Predict the language of a single binary:
 ```bash
-python predict.py path/to/binary
+python predict_xgb.py path/to/binary
 ```
 Example:
 ```bash
-python predict.py dataset/C/c_gcc_-O2_stripped.bin
+python predict_xgb.py dataset/C/c_gcc_-O2_stripped.bin
 ```
 Outputs probabilities for C and C++.
 

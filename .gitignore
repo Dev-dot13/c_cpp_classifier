@@ -11,3 +11,6 @@ dataset/C++_source/
 dataset/metadata.json
 
 *.pkl
+
+predict.py
+train.py
