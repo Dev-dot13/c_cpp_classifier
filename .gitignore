@@ -1,3 +1,6 @@
+.venv
+/.venv
+./venv
 .DS_Store
 dataset/metadata.json
 dataset/C++_source
