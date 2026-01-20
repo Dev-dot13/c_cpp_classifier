@@ -11,6 +11,10 @@ dataset/C++_source/
 dataset/metadata.json
 
 *.pkl
+*.joblib
 
 predict.py
+predict_xgb.py
 train.py
+train_xgb.py
+tests/
