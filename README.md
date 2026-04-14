@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ## Dataset
 Generate sample binaries and metadata:
 ```bash
-python create_dataset.py
+python create_dataset.py <count>
 ```
 
 ## Train Model
